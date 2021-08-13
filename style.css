@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*body {
+    background: #e6e6e6;
+}*/
+
+
+/*navbar 1*/
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #346beb;
+}
+
+.logo img {
+    height: 100px;
+    border-radius: 120px;
+    margin-left: 10px;
+}
+
+
+/*form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.example {
+    margin-right: 13px;
+}
+
+
+
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #cc392f;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    display: table;
+}*/
+
+
+/*search*/
+
+.example {
+    background-color: #fff;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.example input {
+    background: transparent;
+    width: 200px;
+    border: 0;
+    outline: none;
+}
+
+.example button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.example button img {
+    width: 22px;
+}
+
+
+/*navbar 2*/
+
+#nav2 {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.items {
+    margin-top: 18px;
+}
+
+.items ul {
+    display: flex;
+}
+
+.items ul li {
+    list-style-type: none;
+    margin: 0px 40px 0px 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.items ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.label {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.label img {
+    height: 18px;
+    padding: 0px 6px;
+    cursor: pointer;
+}
+
+
+/*li hover */
+
+.items ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    background: #346beb;
+    height: 5px;
+    transition: 0.4s;
+}
+
+.items ul li:hover::after {
+    width: 100%;
+}
+
+
+/*content*/
+
+.content {
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.news h2 {
+    text-align: center;
+    margin-top: 30px
+}
+
+.news2 a {
+    text-decoration: none;
+}
+
+.news1 {
+    display: flex;
+    height: 280px;
+    background-color: #fff;
+    margin: 15px 40px 5px 40px;
+}
+
+.news2 {
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    margin: 16px 10px 10px 10px;
+    flex-wrap: wrap;
+}
+
+.news2 h3 {
+    text-align: center;
+}
+
+.news2 p {
+    text-align: center;
+    margin-top: 12px;
+    color: grey;
+}
+
+.news2 img {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.left {
+    height: 600px;
+    width: 600px;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 10px 25px;
+    background: linear-gradient(to Bottom, rgba(201, 194, 194, 0.123), rgba(8, 4, 4, 0.952)), url('images/oneplus2.png');
+    background-position: center;
+    background-size: cover;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    width: 60%;
+}
+
+.left:hover {
+    transform: translateY(-10px)
+}
+
+.left h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 330px;
+    color: white;
+    font-family: 'STIX Two Text', serif;
+}
+
+.left p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'STIX Two Text', serif;
+    color: white;
+}
+
+.second {
+    display: flex;
+    margin-top: 20px;
+}
+
+.right {
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 400px 350px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.item1 img {
+    height: 200px;
+    width: 350px;
+    margin-top: 5px
+}
+
+.item1 {
+    background-color: #fff;
+    transition: transform 0.5s;
+}
+
+.item1 h2 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1;
+    width: 100%;
+}
+
+.item1:hover {
+    transform: translateX(10px)
+}
+
+.item1 p {
+    font-family: 'STIX Two Text', serif;
+}
+
+.title {
+    text-align: center;
+}
+
+
+/*news*/
+
+.crypto {
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 25px;
+    height: 700px;
+}
+
+.crypto1 {
+    transition: transform 0.5s;
+}
+
+.crypto1:hover {
+    transform: translateY(-10px)
+}
+
+.crypto1 img {
+    height: 200px;
+}
+
+.crypto h1 {
+    font-family: 'STIX Two Text', serif;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1;
+    width: 100%;
+}
+
+.crypto1 p {
+    font-family: STIX Two Text', serif;
+
+}
+
+
+/*upcoming*/
+
+.left1 {
+    height: 600px;
+    width: 600px;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 10px 25px;
+    background: linear-gradient(to Bottom, rgba(201, 194, 194, 0.123), rgba(44, 36, 36, 0.952)), url('images/ip.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    width: 60%;
+}
+
+.left1:hover {
+    transform: translateY(-10px)
+}
+
+.left1 h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 330px;
+    color: white;
+    font-family: 'STIX Two Text', serif;
+}
+
+.left1 p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'STIX Two Text', serif;
+    color: white;
+}
+
+.second1 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.right1 {
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 400px 300px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    height: 600px;
+}
+
+.item2 img {
+    height: 200px;
+    width: 350px;
+    margin-top: 5px
+}
+
+.item2 {
+    background-color: #fff;
+    transition: transform 0.5s;
+}
+
+.item2 h2 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1;
+    width: 100%;
+}
+
+.item2:hover {
+    transform: translateX(10px)
+}
+
+.item2 p {
+    font-family: 'STIX Two Text', serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #0c0324de;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.foot-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    color: #777
+}
+
+.text {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'STIX Two Text', serif;
+    margin-top: 12px;
+}
+
+.social {
+    display: flex;
+    justify-content: center
+}
+
+.social a {
+    display: flex;
+    height: 75px;
+    width: 75px;
+    margin: 0 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social img {
+    height: 50px;
+    display: inline-block;
+    border-radius: 9px;
+    transition: transform 0.5s;
+}
+
+.fb img:hover {
+    transform: translateY(-10px);
+}
+
+.insta img:hover {
+    transform: translateY(-10px);
+}
+
+.twt img:hover {
+    transform: translateY(-10px);
+}
