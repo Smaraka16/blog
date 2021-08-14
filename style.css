@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&display=swap');
 * {
     margin: 0;
@@ -428,6 +428,69 @@ form.example::after {
     text-align: center;
 }
 
+
+/*modal section */
+
+.modal {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    align-items: center;
+}
+
+.login {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: #346beb;
+    padding: 10px;
+    padding: 22px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.login h2 {
+    color: #fff
+}
+
+.login input {
+    width: 80%;
+    padding: 18px;
+    font-size: 15px;
+    display: block;
+    margin: 30px auto;
+    outline: 0;
+    border: 0;
+}
+
+a.user-cred1 {
+    padding: 8px 10px;
+    background-color: #fb641b;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    cursor: pointer;
+}
+
+.close img {
+    height: 30px;
+}
+
+
+/*Fotter sectiom*/
+
 .page-footer {
     background-color: rgba(54, 50, 50, 0.815);
     margin-top: 25px;
@@ -487,24 +550,18 @@ hr {
     margin-top: 15px
 }
 
-.user-cred ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 18px
-}
-
-.user-cred ul li {
-    padding: 0 15px;
+.cred a {
+    padding: 8px 10px;
     background-color: #346beb;
-    padding: 10px;
-    border-radius: 10px;
-    /*border: 1px solid #fff*/
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin: 8px 8px 0 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
 }
 
-.user-cred ul li a {
-    text-decoration: none;
-    color: whitesmoke;
+h2 {
     font-size: 15px;
+    margin-top: 15px;
 }
