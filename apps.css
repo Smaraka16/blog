@@ -1,0 +1,125 @@
+/*upcoming*/
+
+.left1 {
+    height: 600px;
+    width: 600px;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 10px 25px;
+    background: linear-gradient(to Bottom, rgba(201, 194, 194, 0.123), rgba(44, 36, 36, 0.952)), url('images/ip.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    width: 60%;
+}
+
+.left1:hover {
+    transform: translateY(-10px)
+}
+
+.left1 h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 330px;
+    color: white;
+    font-family: 'STIX Two Text', serif;
+}
+
+.left1 p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'STIX Two Text', serif;
+    color: white;
+}
+
+.second1 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.right1 {
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 400px 300px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    height: 600px;
+}
+
+.item2 img {
+    height: 200px;
+    width: 350px;
+    margin-top: 5px
+}
+
+.item2 {
+    background-color: #fff;
+    transition: transform 0.5s;
+}
+
+.item2 h2 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1;
+    width: 100%;
+}
+
+.item2:hover {
+    transform: translateX(10px)
+}
+
+.item2 p {
+    font-family: 'STIX Two Text', serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.crypto {
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 25px;
+    height: 700px;
+}
+
+.crypto1 {
+    transition: transform 0.5s;
+}
+
+.crypto1:hover {
+    transform: translateY(-10px)
+}
+
+.crypto1 img {
+    height: 200px;
+}
+
+.crypto h1 {
+    font-family: 'STIX Two Text', serif;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1;
+    width: 100%;
+}
+
+.crypto1 p {
+    font-family: STIX Two Text', serif;
+
+}
